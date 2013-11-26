@@ -1,0 +1,28 @@
+﻿@model NumberGuessingGame.ViewModels.SecrectNumberViewModel
+
+@{
+    Layout = null;
+    ViewBag.Title = "Asp.net MVC Lab 1";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Styles/reset.css")">
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Styles/style.css")">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>    
+</head>
+<body>
+    <div id="main">
+       <header>
+          <h1>Gissa det hemliga talet</h1>
+       </header>
+        
+        @Html.Partial("guessView", Model)
+        @Html.Partial("resultView", Model)
+        
+    </div>
+</body>
+</html>
