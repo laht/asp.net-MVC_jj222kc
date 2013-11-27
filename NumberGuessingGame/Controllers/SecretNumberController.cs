@@ -30,7 +30,7 @@ namespace NumberGuessingGame.Controllers
             var viewModel = new SecrectNumberViewModel();
 
             //Set viewModel properties to match the model
-<<<<<<< HEAD
+
             //Help the view determine if a guess is possible
             viewModel.CanMakeGuess = secretNumber.CanMakeGuess;
             //If CanMakeGuess is false the number will represent the secret number
@@ -39,13 +39,6 @@ namespace NumberGuessingGame.Controllers
             viewModel.Lastguess = secretNumber.LastGuessedNumber;
             //List containing all guesses made
             viewModel.GuessedNumbers = secretNumber.GuessedNumbers;
-            
-=======
-            viewModel.Number = secretNumber.Number;
-            viewModel.Lastguess = secretNumber.LastGuessedNumber;
-            viewModel.GuessedNumbers = secretNumber.GuessedNumbers;
-            viewModel.CanMakeGuess = secretNumber.CanMakeGuess;
->>>>>>> 78d17954e7a69f4bd44ca2ecfb45a6856a16eb98
 
             return View(viewModel);
         }
@@ -71,7 +64,7 @@ namespace NumberGuessingGame.Controllers
             }
 
             //Set viewModel properties to match the model
-<<<<<<< HEAD
+
             //Help the view determine if a guess is possible
             viewModel.CanMakeGuess = secretNumber.CanMakeGuess;
             //If CanMakeGuess is false the number will represent the secret number
@@ -80,13 +73,6 @@ namespace NumberGuessingGame.Controllers
             viewModel.Lastguess = secretNumber.LastGuessedNumber;
             //List containing all guesses made
             viewModel.GuessedNumbers = secretNumber.GuessedNumbers;
-=======
-            viewModel.Number = secretNumber.Number;
-            viewModel.Lastguess = secretNumber.LastGuessedNumber;
-            viewModel.GuessedNumbers = secretNumber.GuessedNumbers;
-            viewModel.CanMakeGuess = secretNumber.CanMakeGuess;
->>>>>>> 78d17954e7a69f4bd44ca2ecfb45a6856a16eb98
-
             return View(viewModel);
         }
 
